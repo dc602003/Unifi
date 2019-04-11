@@ -11,6 +11,6 @@ wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo
 # Install Apt HTTPS, and update
 apt update && apt install --yes apt-transport-https unifi
 # Thanks
-service unifi status
+service unifi status &
 echo "Unifi Controller installed. If the status above shows 'active', then try to connect to https://<<ServerIP>>:8443"
 echo "It may take a few minutes for the service to start fully. Have a nice day. Coops."
